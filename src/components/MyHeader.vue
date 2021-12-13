@@ -65,7 +65,7 @@ export default {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 650px;
+        height: 750px;
 
         img {
             filter: invert(1);
