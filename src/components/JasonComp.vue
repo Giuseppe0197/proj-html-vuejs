@@ -109,6 +109,8 @@ export default {
 
         .jasonSign {
             float: right;
+            color: #ff4612;
+            margin-top: -30px;
         }
 
         .origin {

@@ -26,17 +26,21 @@
 
       <JasonComp/>
 
+      <UpcomingEv/>
+
     </main>
 
 </template>
 
 <script>
 import JasonComp from '@/components/JasonComp.vue'
+import UpcomingEv from '@/components/UpcomingEv.vue'
 
 export default {
   name: 'MyMain',
   components: {
-      JasonComp
+      JasonComp,
+      UpcomingEv
   },
   data() {
       return {
