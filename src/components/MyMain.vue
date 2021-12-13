@@ -1,5 +1,5 @@
 <template>
-  <main>
+    <main>
       <div class="specialties">
 
         <h2>Our spacialties <span class="dot">.</span></h2>
@@ -24,13 +24,20 @@
 
       </div>
 
+      <JasonComp/>
+
     </main>
-    
+
 </template>
 
 <script>
+import JasonComp from '@/components/JasonComp.vue'
+
 export default {
   name: 'MyMain',
+  components: {
+      JasonComp
+  },
   data() {
       return {
           imagesSpecialties: [
@@ -68,7 +75,7 @@ export default {
 <style scoped lang="scss">
 
 main {
-    
+    /* background-color: #fafafa; */
 
     .specialties {
         background-color: white;
@@ -116,13 +123,6 @@ main {
                 }
             }
         }
-    }
-
-    .jason {
-        background-color: grey;
-        width: 90%;
-        margin: 0 auto;
-        height: 500px;
     }
 }
 
