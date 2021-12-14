@@ -1,6 +1,8 @@
 <template>
     <div class="jason">
 
+        <!-- creiamo un'immagine  -->
+
         <div class="interview">
 
             <img src="../assets/img/h1-img-01.jpg" alt="">
@@ -13,6 +15,7 @@
             
 
         </div>
+        <!-- creiamo un div che si andrà a sovrapporre all'immagine di sopra -->
 
         <div class="jasonFounder">
 
@@ -34,6 +37,8 @@
 
         </div>
 
+        <!-- mettiamo un'immagine simil sfondo -->
+
         <img class="origin" src="../assets/img/svg-4.svg">
 
        
@@ -49,6 +54,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+/* stilizziamo le sezioni */
     .jason {
         width: 60%;
         margin: 100px auto 0;
@@ -118,7 +125,6 @@ export default {
            right: -170px;
            bottom: 30px;
            width: 45%;
-           /* height: 300px; */
            position: absolute;
         }
     }

@@ -1,13 +1,17 @@
 <template>
     <main>
+
+        <!-- creiamo un div che conterrà le informazioni delle specialties -->
       <div class="specialties">
 
-        <h2>Our spacialties <span class="dot">.</span></h2>
+        <h2>Our specialties <span class="dot">.</span></h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
         <div class="border"></div>
 
         <div class="spec">
+
+            <!-- popoliamo dinamicamente le sezioni con immagine e informazioni -->
 
             <div v-for="spec, i in imagesSpecialties" :key="i" class="specDiv">
 
@@ -24,26 +28,38 @@
 
       </div>
 
+      <!-- creiamo un sottocomponente per la parte del founder -->
+
       <JasonComp/>
 
+      <!-- sotto componente per la prenotazione e le informazioni degli eventi in arrivo -->
+
       <UpcomingEv/>
+
+      <!-- sotto componente che contiene dati in percentuale richiesti in un leader-->
+
+      <Leader/>
 
     </main>
 
 </template>
 
 <script>
+/* importiamo i sotto componenti */
 import JasonComp from '@/components/JasonComp.vue'
 import UpcomingEv from '@/components/UpcomingEv.vue'
+import Leader from '@/components/Leader.vue'
 
 export default {
   name: 'MyMain',
   components: {
       JasonComp,
-      UpcomingEv
+      UpcomingEv,
+      Leader
   },
   data() {
       return {
+          /* creiamo un'array per le sezioni con immagini che non si trovano nei soto componenti */
           imagesSpecialties: [
               {
                   'image': 'svg-0.svg',
@@ -79,8 +95,7 @@ export default {
 <style scoped lang="scss">
 
 main {
-    /* background-color: #fafafa; */
-
+    /* stilizziamo le varie sezioni */
     .specialties {
         background-color: white;
         width: 90%;

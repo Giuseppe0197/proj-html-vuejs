@@ -1,11 +1,14 @@
 <template>
   <header>
       <div>
+          <!-- creiamo un ciclo for per stampare dinamicamente le voci di menu -->
           <MyHeaderSub
           v-for="list, i in headerList"
           :key="i"
           :details="list" />
       </div>
+
+      <!-- creiamo una parte simil jumbo che conterrà tutte le informazioni relative all'header -->
 
       <div class="team">
 
@@ -28,6 +31,7 @@
 </template>
 
 <script>
+/* importiamo il sotto componente con il quale popoleremo le voci di menu */
 import MyHeaderSub from '@/components/MyHeaderSub.vue'
 
 export default {
@@ -38,6 +42,7 @@ export default {
   data() {
 
       return {
+          /* creiamo un'array che andrà riportata nel sotto componente tramite props */
           headerList: [
               {
                   'image': 'logo-img-01.png',
@@ -60,12 +65,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+/* mettiamo un'immagine di sfondo all'header */
+
     header {
         background-image: url("../assets/img/rev-slider-main-home-img-03.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         height: 750px;
+
+        /* usaimo un filter invert per mettere le frecce desiderate di colore nero */
 
         img {
             filter: invert(1);
@@ -75,6 +84,8 @@ export default {
         .arrowteam {
             filter: invert(1);
         }
+
+        /* andiamo a stlizzare la parte dell'header che contiene le informazioni con i bottoni */
 
         .team {
             width: 90%;

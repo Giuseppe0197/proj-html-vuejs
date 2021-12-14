@@ -1,6 +1,8 @@
 <template>
   <div class="subheader">
 
+      <!-- andiamo a  popolare le voci del menu grazie alle props passate dal componente padre -->
+
     <div class="headerlinks">
 
         <div class="logo">
@@ -27,6 +29,7 @@
 <script>
 export default {
   name: 'MyHeaderSub',
+  /* inseriamo le props per popolare il menu */
   props: {
       details: Object
   }
@@ -35,6 +38,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+/* stlizziamo le voci di menu */
 
 .headerlinks {
     display: flex;

@@ -1,10 +1,14 @@
 <template>
+
+<!-- creiamo una sezione per gli eventi in arrivo -->
     <div class="events">
         <div class="container">
             <div class="upcoming">
                 <div class="titleUp">
                     <h2>Upcoming Events</h2>
                 </div>
+
+                 <!-- creiamo la sezione che conterrà le informazioni per gli eventi -->
                 <div class="coaching">
                     <div class="calendar">
                         <h3>07</h3>
@@ -59,6 +63,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+/* stilizziamo le varie sezioni */
 .events {
     background-image: url("../assets/img/h1-img-09.jpg");
     margin-top: 70px;
