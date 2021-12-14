@@ -48,6 +48,10 @@
 
       <Testimonials/>
 
+      <!-- sotto componente per la sezione contatti con il form per richiedere le informazioni -->
+
+      <ContactUs/>
+
     </main>
 
 </template>
@@ -59,6 +63,7 @@ import UpcomingEv from '@/components/UpcomingEv.vue'
 import Leader from '@/components/Leader.vue'
 import LatestNews from '@/components/LatestNews.vue'
 import Testimonials from '@/components/Testimonials.vue'
+import ContactUs from '@/components/ContactUs.vue'
 
 export default {
   name: 'MyMain',
@@ -67,7 +72,8 @@ export default {
       UpcomingEv,
       Leader,
       LatestNews,
-      Testimonials
+      Testimonials,
+      ContactUs
   },
   data() {
       return {

@@ -1,6 +1,8 @@
 <template>
 <div class="testimonials">
 
+    <!-- creiamo la sezione che contiene il titolo e l'immagine con le informazioni del testimonial -->
+
     <div class="testimonialinfo">
         <h2>Testimonials.</h2>
         <button class="buttonTestimonial"><i class="fas fa-long-arrow-alt-up"></i></button>
@@ -25,12 +27,16 @@
         </div>
     </div>
 
+    <!-- creiamo una sezione che funziona da video player per un'introduzione alla pagina e al servizio -->
+
     <div class="videoplay">
 
        
             <i class="fas fa-play"></i>
 
-            <button class="buttonplay"><i class="fas fa-long-arrow-alt-up"></i></button>
+            <button class="buttonplay buttonplay1"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+            <button class="buttonplay buttonplay2"><i class="fas fa-long-arrow-alt-up"></i></button>
 
             <div class="containerorigin">
 
@@ -47,8 +53,6 @@
         
 
     </div>
-
-    <!-- <div class="prova"></div> -->
 
 </div>
 </template>
@@ -162,19 +166,29 @@ export default {
         }
 
         .buttonplay {
-            position: absolute;
             background-color: white;
             border: none;
             border-radius: 50%;
             padding: 10px 15px;
-            right: 5px;
-            top: 150px;
 
             .fa-long-arrow-alt-up {
                 color: #ff4612;
                 font-size: 18px;
             }
         }
+
+        .buttonplay1 {
+            position: absolute;
+            right: 5px;
+            top: 150px;
+        }
+
+        .buttonplay2 {
+            position: absolute;
+            right: 5px;
+            bottom: -15px;
+        }
+
 
         .containerorigin {
             background-color: #EF2853;
@@ -189,7 +203,6 @@ export default {
                 width: 20px;
                 filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(117%) contrast(190%);
             }
-
         }
 
         .containershopping {
@@ -209,9 +222,4 @@ export default {
 
 
     }
-
-    /* .prova {
-        background-color: red;
-        height: 500px;
-    } */
 </style>
