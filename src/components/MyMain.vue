@@ -44,6 +44,10 @@
 
       <LatestNews/>
 
+      <!-- sotto componente per la sezione del testimonials -->
+
+      <Testimonials/>
+
     </main>
 
 </template>
@@ -54,6 +58,7 @@ import JasonComp from '@/components/JasonComp.vue'
 import UpcomingEv from '@/components/UpcomingEv.vue'
 import Leader from '@/components/Leader.vue'
 import LatestNews from '@/components/LatestNews.vue'
+import Testimonials from '@/components/Testimonials.vue'
 
 export default {
   name: 'MyMain',
@@ -61,7 +66,8 @@ export default {
       JasonComp,
       UpcomingEv,
       Leader,
-      LatestNews
+      LatestNews,
+      Testimonials
   },
   data() {
       return {

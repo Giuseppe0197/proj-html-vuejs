@@ -83,6 +83,7 @@ export default {
 
         .arrowteam {
             filter: invert(1);
+            margin-top: 30px;
         }
 
         /* andiamo a stlizzare la parte dell'header che contiene le informazioni con i bottoni */
@@ -112,6 +113,7 @@ export default {
 
             p {
                 color: #ccc;
+                margin: 20px 0;
             }
             
             button {

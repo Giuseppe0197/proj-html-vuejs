@@ -64,6 +64,10 @@ ul li{
     font-size: 12px;
 }
 
+.arrowImage {
+    filter: invert(64%) sepia(88%) saturate(6650%) hue-rotate(353deg) brightness(101%) contrast(102%);
+}
+
 .home {
     color: #ff4612;
 }
