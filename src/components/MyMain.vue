@@ -40,6 +40,10 @@
 
       <Leader/>
 
+      <!-- sotto componente per la sezione news -->
+
+      <LatestNews/>
+
     </main>
 
 </template>
@@ -49,13 +53,15 @@
 import JasonComp from '@/components/JasonComp.vue'
 import UpcomingEv from '@/components/UpcomingEv.vue'
 import Leader from '@/components/Leader.vue'
+import LatestNews from '@/components/LatestNews.vue'
 
 export default {
   name: 'MyMain',
   components: {
       JasonComp,
       UpcomingEv,
-      Leader
+      Leader,
+      LatestNews
   },
   data() {
       return {
