@@ -41,7 +41,9 @@
 
         <img class="origin" src="../assets/img/svg-4.svg">
 
-       
+       <button class="buttonJason buttonJason1"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+       <button class="buttonJason buttonJason2"><i class="fas fa-long-arrow-alt-up"></i></button>
         
     </div>
 </template>
@@ -61,6 +63,29 @@ export default {
         margin: 100px auto 0;
         display: flex;
         position: relative;
+
+        .buttonJason {
+                background-color: white;
+                border: none;
+                border-radius: 50%;
+                padding: 10px 15px;
+            }
+
+            .fa-long-arrow-alt-up {
+                color: #ff4612;
+                font-size: 18px;
+            }
+
+            .buttonJason1 {
+                position:absolute;
+                right: -290px;
+            }
+
+            .buttonJason2 {
+                position: absolute;
+                right: -290px;
+                bottom: 430px;
+            }
         
         img {
             width: 100%;
@@ -106,6 +131,11 @@ export default {
 
         .logos {
             margin-top: 10px;
+        }
+
+        .fab:hover {
+            color: black;
+            cursor: pointer;
         }
 
         .logos i {

@@ -51,6 +51,7 @@
                     </div>
                 </div>
             </div>
+            <button class="buttonEvents"><i class="fas fa-long-arrow-alt-up"></i></button>
         </div>
     </div>
 </template>
@@ -75,6 +76,21 @@ export default {
 
     .container {
         position: relative;
+
+        .buttonEvents {
+                background-color: white;
+                border: none;
+                border-radius: 50%;
+                padding: 10px 15px;
+                position:absolute;
+                right: 20px;
+                top: 350px;
+            }
+
+            .fa-long-arrow-alt-up {
+                color: #ff4612;
+                font-size: 18px;
+            }
     }
 
     .upcoming {

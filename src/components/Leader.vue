@@ -65,6 +65,8 @@
             <div class="borderright4"></div>
             </div>
         </div>
+
+        <button class="buttonCreative"><i class="fas fa-long-arrow-alt-up"></i></button>
         
     </div>
 </div>
@@ -87,6 +89,7 @@ export default {
         margin: 0 auto;
         padding-top: 80px;
         display: flex;
+        position: relative;
         
 
         .leaderInfo {
@@ -179,5 +182,20 @@ export default {
 
 
     }
+
+    .buttonCreative {
+                background-color: white;
+                border: none;
+                border-radius: 50%;
+                padding: 10px 15px;
+                position:absolute;
+                right: -150px;
+                bottom: 140px;
+            }
+
+            .fa-long-arrow-alt-up {
+                color: #ff4612;
+                font-size: 18px;
+            }
 }
 </style>

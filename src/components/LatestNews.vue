@@ -14,6 +14,8 @@
         <img class="arrowleft" src="../assets/img/svg-6.svg" alt="">
 
         <img class="arrowright" src="../assets/img/svg-6.svg" alt="">
+
+        <button class="buttonLatest"><i class="fas fa-long-arrow-alt-up"></i></button>
     </div>
 
     <div class="imageInfo">
@@ -107,6 +109,21 @@ export default {
             top: 300px;
             cursor: pointer;
         }
+
+        .buttonLatest {
+                background-color: white;
+                border: none;
+                border-radius: 50%;
+                padding: 10px 15px;
+                position:absolute;
+                right: 20px;
+                bottom: -120px;
+            }
+
+            .fa-long-arrow-alt-up {
+                color: #ff4612;
+                font-size: 18px;
+            }
 
         .titleNews {
             text-align: center;
