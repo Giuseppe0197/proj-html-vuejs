@@ -138,6 +138,7 @@ export default {
             vertical-align: middle;
             line-height: 30px;
             position: relative;
+            margin-top: 100px;
 
             span {
                 font-size: 12px;

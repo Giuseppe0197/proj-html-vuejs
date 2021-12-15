@@ -4,8 +4,23 @@
         <ul class="links">
             <li class="title">{{details.titleTwitter}}</li>
             <li class="borderBottom"></li>
-            <li class="par"><i :class="details.twitterPar"></i><a href="">{{details.adam}}</a> {{details.hello}} <a href="">{{details.adam}}</a> {{details.submit}} <a href="">{{details.linkSubmit}}</a> {{details.submitTwo}} <a href="">{{details.linkSupport}}</a></li>
-            <li class="par"><i :class="details.twitterPar"></i><a href="">{{details.henry}}</a> {{details.checkOut}} <a href="">{{details.linkMarket}}</a></li>
+            <li class="par">
+                <div class="parFlex">
+                    <i :class="details.twitterPar"></i>
+                    <div class="paragraphRight">
+                        <a href="">{{details.adam}}</a> {{details.hello}} <a href="">{{details.adam}}</a> {{details.submit}} <a href="">{{details.linkSubmit}}</a> {{details.submitTwo}} <a href="">{{details.linkSupport}}</a>
+                    </div>
+                </div></li>
+            <li class="par">
+                <div class="parFlex">
+                    <i :class="details.twitterPar"></i>
+
+                    <div class="paragraphRight">
+
+                        <a href="">{{details.henry}}</a> {{details.checkOut}} <a href="">{{details.linkMarket}}</a>
+
+                    </div>
+                </div></li>
         </ul>
 
     </div>
@@ -47,7 +62,11 @@ export default {
 
     .fa-twitter {
         color: #ff4612;
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+
+    .parFlex {
+        display: flex;
     }
 
     .borderBottom {

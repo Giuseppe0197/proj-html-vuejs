@@ -197,6 +197,7 @@ export default {
         .send {
             background-color: #ff4612;
             margin-top: 20px;
+            width: 150px;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -213,6 +214,10 @@ export default {
             margin-left: 15px;
         }
 
+        }
+
+        .send:hover .bordersend{
+            display: none;
         }
     }
 

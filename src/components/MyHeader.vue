@@ -119,6 +119,7 @@ export default {
             button {
                 border: none;
                 padding: 10px;
+                width: 200px;
                 text-transform: uppercase;
                 font-size: 12px;
 
@@ -137,7 +138,13 @@ export default {
                     border-left: 2px solid white;
                     margin-left: 15px;
                 }
+
+                
             }
+
+            button:hover span {
+                    display: none;
+                }
 
             .read {
                 background-color: white;
