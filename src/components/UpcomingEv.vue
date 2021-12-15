@@ -9,45 +9,17 @@
                 </div>
 
                  <!-- creiamo la sezione che conterrà le informazioni per gli eventi -->
-                <div class="coaching">
+                <div v-for="events, i in eventCity" :key="i" class="coaching">
                     <div class="calendar">
-                        <h3>07</h3>
-                        <p>Jan. 2022</p>
+                        <h3>{{events.day}}</h3>
+                        <p>{{events.year}}</p>
                     </div>
 
                     <div class="infos">
-                        <h2>Melbourne Coaching</h2>
-                        <p class="hour"><i class="far fa-clock"></i><span>9:00 am - 5:00 pm, Jan 7, 2022</span></p>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Cambridge, MA 02138, USA</span></p>
-                        <p class="read">Read More</p>
-                    </div>
-                </div>
-
-                <div class="coaching">
-                    <div class="calendar">
-                        <h3>11</h3>
-                        <p>Jan. 2022</p>
-                    </div>
-
-                    <div class="infos">
-                        <h2>New York Coaching</h2>
-                        <p class="hour"><i class="far fa-clock"></i><span>9:00 am - 5:00 pm, Jan 11, 2022</span></p>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Cambridge, MA 02138, USA</span></p>
-                        <p class="read">Read More</p>
-                    </div>
-                </div>
-
-                <div class="coaching">
-                    <div class="calendar">
-                        <h3>21</h3>
-                        <p>Jan. 2022</p>
-                    </div>
-
-                    <div class="infos">
-                        <h2>London Coaching</h2>
-                        <p class="hour"><i class="far fa-clock"></i><span>9:00 am - 5:00 pm, Jan 21, 2022</span></p>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Cambridge, MA 02138, USA</span></p>
-                        <p class="read">Read More</p>
+                        <h2>{{events.titleEvent}}</h2>
+                        <p class="hour"><i :class="events.clock"></i><span>{{events.hour}}</span></p>
+                        <p class="location"><i :class="events.where"></i><span>{{events.location}}</span></p>
+                        <p class="read">{{events.readMore}}</p>
                     </div>
                 </div>
             </div>
@@ -59,6 +31,45 @@
 <script>
 export default {
   name: 'UpcomingEv',
+
+  data () {
+      return {
+          eventCity: [
+              {
+                  'day': '07',
+                  'year': 'Jan. 2022',
+                  'titleEvent': 'Melbourne Coaching',
+                  'clock': 'far fa-clock',
+                  'hour': '9:00 am - 5:00 pm, Jan 7, 2022',
+                  'where': 'fas fa-map-marker-alt',
+                  'location': 'Cambridge, MA 02138, USA',
+                  'readMore': 'Read More'
+              },
+
+              {
+                  'day': '11',
+                  'year': 'Jan. 2022',
+                  'titleEvent': 'New York Coaching',
+                  'clock': 'far fa-clock',
+                  'hour': '9:00 am - 5:00 pm, Jan 7, 2022',
+                  'where': 'fas fa-map-marker-alt',
+                  'location': 'Cambridge, MA 02138, USA',
+                  'readMore': 'Read More'
+              },
+
+              {
+                  'day': '21',
+                  'year': 'Jan. 2022',
+                  'titleEvent': 'London Coaching',
+                  'clock': 'far fa-clock',
+                  'hour': '9:00 am - 5:00 pm, Jan 7, 2022',
+                  'where': 'fas fa-map-marker-alt',
+                  'location': 'Cambridge, MA 02138, USA',
+                  'readMore': 'Read More'
+              },
+          ]
+      }
+  }
 }
 </script>
 
