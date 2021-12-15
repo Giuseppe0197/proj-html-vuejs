@@ -44,12 +44,57 @@
 
     </div>
 
+    <!-- sezione con i loghi della pagina -->
+
+    <div class="logos">
+
+        <div v-for="img, i in imgLogo" :key="i" class="logoFirst">
+
+            <img class="logo" :src="require(`../assets/img/${img.firstImg}`)" alt="">
+            <img class="logoHover" :src="require(`../assets/img/${img.secondImg}`)" alt="">
+
+        </div>
+
+        <button class="buttonLogo"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+    </div>
+
 </div>
 </template>
 
 <script>
 export default {
   name: 'ContactUs',
+    data () {
+        return {
+            imgLogo: [
+                {
+                    'firstImg': 'h4-clients-img-03.png',
+                    'secondImg': 'h4-clients-img-04-1.png'
+                },
+
+                {
+                    'firstImg': 'h4-clients-img-05.png',
+                    'secondImg': 'h4-clients-img-06-1.png'
+                },
+
+                {
+                    'firstImg': 'h4-clients-img-07.png',
+                    'secondImg': 'h4-clients-img-08-1.png'
+                },
+
+                {
+                    'firstImg': 'h4-clients-img-09.png',
+                    'secondImg': 'h4-clients-img-10-1.png'
+                },
+
+                {
+                    'firstImg': 'h4-clients-img-01.png',
+                    'secondImg': 'h4-clients-img-02.png'
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -164,6 +209,40 @@ export default {
         }
 
         }
+    }
 
+    .logos {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .buttonLogo {
+            position: absolute;
+            right: -200px;
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+
+            .fa-long-arrow-alt-up {
+                color: #ff4612;
+                font-size: 18px;
+            }
+        }
+
+        .logoHover {
+            display: none;
+        }
+
+        .logoFirst:hover .logo {
+            display: none;
+        }
+
+        .logoFirst:hover .logoHover {
+            display: block;
+        }
     }
 </style>
