@@ -48,6 +48,8 @@
 
     <div class="logos">
 
+        <!-- facciamo un ciclo for per creare dinamicamente i loghi della pagina -->
+
         <div v-for="img, i in imgLogo" :key="i" class="logoFirst">
 
             <img class="logo" :src="require(`../assets/img/${img.firstImg}`)" alt="">
@@ -67,6 +69,9 @@ export default {
   name: 'ContactUs',
     data () {
         return {
+
+            /* creiamo un'array che contiene i path dei loghi in modo da stamparli dinamicamente in html */
+            
             imgLogo: [
                 {
                     'firstImg': 'h4-clients-img-03.png',
